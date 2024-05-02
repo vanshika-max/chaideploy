@@ -45,7 +45,7 @@ app.get('/twitter',(req,res)=>{
     res.send('welcome to twitter')
 })
 app.get('/login',(req,res)=>{
-     res.send('<h1>please login at chai aur code</h1>')
+     res.send('<h1>please login !!!!</h1>')
 })
 app.get('/youtube',(req,res)=>{
    url="https://www.youtube.com/"
@@ -55,6 +55,6 @@ app.get('/github',(req,res)=>{
     res.json(githubData)
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
